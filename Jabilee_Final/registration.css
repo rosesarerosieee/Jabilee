@@ -1,0 +1,202 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-image: url("meat_background.jpg");
+    font-family: 'Poppins', sans-serif;
+}
+
+p {
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+
+}
+
+input[type=text], input[type=password], input[type=email] {
+    width: 50%;
+    padding: 10px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #ffffff;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+input[type=text]:focus, input[type=password]:focus, input[type=email]:focus {
+    background-color: #eca5a5;
+    margin-top: 10px;
+}
+
+hr {
+    border: 1px solid #020202;
+    margin-bottom: 40px;
+    margin-left: 135px;
+    width: 60%;
+}
+
+.top{
+    position: fixed;
+    background: linear-gradient(60deg, rgb(54, 25, 25), rgb(151, 8, 8), rgb(253, 51, 0));
+    width: 100%;
+    padding: 20px;
+    z-index: 1;
+}
+
+.top h1{
+    width: 3%;
+    position: relative;
+    top: -3px;
+    left: 10%;
+    cursor: pointer;
+    font-size: 2.8em;
+}
+
+.title{
+    text-align: center;
+    font-size: 40px;
+}
+
+.navigation1 {
+    text-align: center;
+    margin-left: 50px;
+}
+
+.navigation1 li{
+    display:inline-block;
+    padding: 0 30px;
+}
+
+.top ul :hover{
+    color: rgb(241, 89, 50);
+}
+
+.top ul{
+    list-style:none;
+    text-decoration: none;
+    margin-top: -40px;
+    margin-right: 53%;
+}
+
+.top a{
+    list-style:none;
+    text-decoration: none;
+    color: white;
+    font-size: larger;
+    margin-left: 20px;
+} 
+.container {
+    padding: 20px;
+    background-color: rgb(25, 25, 25);
+    margin: 6% auto 2% auto; 
+    border: 1px solid rgb(0, 0, 0);
+    width: 40%;
+    border-radius: 15px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#validmessage {
+    display:none;
+    background: rgb(235, 231, 231);
+    color: rgb(0, 0, 0);
+    position: relative;
+    padding: 10px;
+    width: 51%;
+    border-radius: 15px;
+    margin: 0.1% auto 1% auto; 
+    border: 1px solid rgb(0, 0, 0);
+}
+
+#validmessage p {
+    font-size: 18px;
+}
+
+#validmessage h4 {
+    font-size: 17px;
+}
+
+/* Password Checker */
+
+.pwvalid {
+    color: rgb(0, 128, 0);
+}
+
+.pwvalid:before {
+    position: relative;
+    left: -35px;
+    content: "\2714";
+}
+
+.pwinvalid {
+    color: rgb(255, 0, 0);
+}
+
+.pwinvalid:before {
+    position: relative;
+    left: -35px;
+    content: "\2716";
+}
+
+.pwcheck {
+    position: absolute;
+    margin-left: 25px;
+    margin-top: 14px;
+}
+
+/* Button */
+  
+.btn{
+    padding: 1.1em 3em;
+    background: none;
+    border: 2px solid #fff;
+    font-size: 15px;
+    color: #b3a3a3;
+    cursor: pointer;
+    position: relative;
+    margin-bottom: 2%;
+    overflow: hidden;
+    transition: all 0.3s;
+    border-radius: 12px;
+    background-color: #302e2efa;
+    font-weight: bolder;
+    box-shadow: 0 2px 0 2px rgb(92, 88, 88);
+}
+
+.btn:before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 120%;
+    background-color: #5425d6;
+    top: 50%;
+    transform: skewX(30deg) translate(-150%, -50%);
+    transition: all 0.5s;
+}
+
+.btn:hover{
+    background-color: #dd2a2a;
+    color: rgb(255, 255, 255);
+    box-shadow: 0 2px 0 2px #9f25af;
+}
+
+.btn:hover::before {
+    transform: skewX(30deg) translate(150%, -50%);
+    transition-delay: 0.1s;
+}
+
+.btn:active {
+    transform: scale(0.9);
+}

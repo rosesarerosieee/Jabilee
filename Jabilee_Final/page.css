@@ -1,0 +1,441 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: rgb(250, 250, 250);
+}
+body{
+    background-color: rgb(255, 255, 255);
+    font-family: 'Poppins', sans-serif;
+}
+.top{
+    position: fixed;
+    background: linear-gradient(60deg, black, red);
+    width: 100%;
+    padding: 10px;
+    z-index: 1;
+}
+
+.top ul{
+    list-style:none;
+    text-decoration: none;
+}
+.top a{
+    list-style:none;
+    text-decoration: none;
+}
+
+.top h5{
+    width: 3%;
+    position: relative;
+    top: 30px;
+    left: 90%;
+    cursor: pointer;
+    font-size: 2em;
+}
+.top h5 i{
+    color: black;
+}               
+
+.navigation1 {
+    text-align: center;
+}
+
+.navigation1 li{
+    display:inline-block;
+    padding: 0 30px;
+}
+
+.top ul :hover{
+    color: rgb(255, 60, 1);
+}
+.mainbg{
+    background-image: url(cook.gif);
+    background-size: cover;
+    text-align: left;
+    background-repeat: no-repeat;
+    
+}
+.title{
+    text-align: center;
+    font-size: 40px;
+}
+.main{
+    max-width: 0px;
+    margin: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+
+}
+
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 200px;
+}
+.row h1{
+    color: black;
+    text-align: left;
+    font-size: 1rem;
+    margin-bottom: 20%;
+
+}
+.row p{
+    color: black;
+    text-align: center;
+    font-size: 1rem;
+    padding: 0%;
+    margin: 0%;
+}
+.row h4{
+    text-align: center;
+}
+.col1{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.col1 h1{
+    font-size: 3rem;
+    line-height: 1;
+    color: black;
+    text-align: left;
+}
+.col1 p{
+    font-size: 1.3rem;
+    font-style: italic;
+    color: black;
+}
+.col1 img{
+    padding-top: 100px;
+    padding-left: 30px;
+    height: 700px;
+    width: 500px;
+}
+.btn{
+    display: inline-block;
+    padding: 5px 30px;
+    margin: 20px 0;
+    background-color: black;
+    border-radius: 100px;
+    text-decoration: none;
+}
+.btn:hover {
+    background-color: rgb(255, 230, 2);
+    color: red;
+}
+.products{
+    max-width: 1100px;
+    margin: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 80px;
+}
+.products img{
+    width: 250px;
+    height: 250px;
+    transition: transform .2s;
+}
+.products img:hover{
+    transform: scale(1.2);
+}
+.products h4{
+    color: black;
+}
+.p1{
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+}
+/*
+.product .row span{
+    position: absolute;
+    top: 14px;
+    left: 13px;
+    background: red;
+    width: 300px;
+    height: 186px;
+    display: none;
+}
+.product .row span img{
+    width: 100%;
+    height: 100%;
+}
+.product .row:nth-child(1)>span.active{
+    animation: first 0.5s ease-in;
+    z-index: 2;
+    display: block;
+
+}
+.product .row:nth-child(2)>span.active{
+    animation: second 0.5s ease-in;
+    z-index: 2;
+    display: block;
+
+}
+.product .row:nth-child(3)>span.active{
+    animation: third 0.5s ease-in;
+    z-index: 2;
+    display: block;
+
+}
+.product .row:nth-child(4)>span.active{
+    animation: four 0.5s ease-in;
+    z-index: 2;
+    display: block;
+
+}
+@keyframes first{
+    to{
+        width: 30px;
+        height: 20px;
+        left: 1290px;
+        top: -70px;
+    }
+}
+@keyframes second{
+    to{
+        width: 30px;
+        height: 20px;
+        left: 948px;
+        top: -70px;
+    }
+}
+@keyframes third{
+    to{
+        width: 30px;
+        height: 20px;
+        left: 606px;
+        top: -70px;
+    }
+}
+@keyframes four{
+    to{
+        width: 30px;
+        height: 20px;
+        left: 265px;
+        top: -70px;
+    }
+}
+*/
+
+.button1{
+    padding: 5px;
+    background: black;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    color:pink;
+    cursor: pointer;
+    top: 50%;
+    right: 54;
+    
+}
+.button1:hover{
+    color: white;
+    background-color: red;
+}
+
+/*
+.select{
+    width: 60%;
+    height: 580px;
+    padding: 5%;
+    background: #222;
+    position: absolute;
+    top: -1000px;
+    left: 20%;
+    transition: 0.5s;
+    overflow-y: auto;
+    margin: auto;
+}
+.select.display{
+    top: 100px;
+}
+.select div{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    padding: 5px;
+    border: 1px solid white;
+    position: relative;
+    margin: 5px auto;
+}
+.select div img{
+    width: 300px;
+    height: 100%;
+}
+.select div p{
+    padding: 35px;
+    color: white;
+}
+.select div h6,
+.select div button{
+    position: absolute;
+    left: 45%;
+    top: 50%;
+    color: pink;
+}
+.select div button{
+    left: 60%;
+    top: 55%;
+}
+.select div span{
+    display: none;
+}
+/* From uiverse.io */
+.fancy {
+    background-color: transparent;
+    border: 2px solid #000;
+    border-radius: 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    margin: 7%;
+    outline: none;
+    overflow: visible;
+    padding: 1.25em 2em;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    transition: all 0.3s ease-in-out;
+    user-select: none;
+    font-size: 13px;
+    top: 50%;
+    left: 36%;
+   }
+   
+   .fancy::before {
+    content: " ";
+    width: 1.5625rem;
+    height: 2px;
+    background: black;
+    top: 50%;
+    left: 1.5em;
+    position: absolute;
+    transform: translateY(-50%);
+    transform-origin: center;
+    transition: background 0.3s linear, width 0.3s linear;
+   }
+   
+   .fancy .text {
+    font-size: 1.125em;
+    line-height: 1.33333em;
+    padding-left: 2em;
+    display: block;
+    text-align: left;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+   }
+   
+   .fancy .top-key {
+    height: 2px;
+    width: 1.5625rem;
+    top: -2px;
+    left: 0.625rem;
+    position: absolute;
+    background: #e8e8e8;
+    transition: width 0.5s ease-out, left 0.3s ease-out;
+   }
+   
+   .fancy .bottom-key-1 {
+    height: 2px;
+    width: 1.5625rem;
+    right: 1.875rem;
+    bottom: -2px;
+    position: absolute;
+    background: #e8e8e8;
+    transition: width 0.5s ease-out, right 0.3s ease-out;
+   }
+   
+   .fancy .bottom-key-2 {
+    height: 2px;
+    width: 0.625rem;
+    right: 0.625rem;
+    bottom: -2px;
+    position: absolute;
+    background: #e8e8e8;
+    transition: width 0.5s ease-out, right 0.3s ease-out;
+   }
+   
+   .fancy:hover {
+    color: white;
+    background: black;
+   }
+   
+   .fancy:hover::before {
+    width: 0.9375rem;
+    background: white;
+   }
+   
+   .fancy:hover .text {
+    color: white;
+    padding-left: 1.5em;
+   }
+   
+   .fancy:hover .top-key {
+    left: -2px;
+    width: 0px;
+   }
+   
+   .fancy:hover .bottom-key-1,
+    .fancy:hover .bottom-key-2 {
+    right: 0;
+    width: 0;
+   }
+
+.Footer{
+    background: linear-gradient(60deg, black, red);
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.Footer ul{
+    list-style:none;
+    text-decoration: none;
+    
+}
+.Footer a{
+    list-style:none;
+    text-decoration: none;
+}
+
+.Navigation {
+    text-align: center;
+}
+
+.Navigation li{
+    display: inline-block;
+    padding: 0 30px;
+}
+
+ul :hover{
+    color: rgb(255, 230, 1);
+}
+
+.Button{
+    display:flex;
+    justify-content: end;
+}
+.button3{
+    padding: 30px 30px;
+    margin: 20px 20px;
+    background-color: black;
+    border-radius: 30px;
+    text-decoration:none;
+    
+}
+.Button :hover {
+    background-color: yellow;
+    color: red;
+    
+}

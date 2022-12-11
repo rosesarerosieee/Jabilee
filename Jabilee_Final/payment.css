@@ -1,0 +1,43 @@
+.top{
+    position: fixed;
+    background: linear-gradient(60deg, black, red);
+    width: 100%;
+    padding: 10px;
+    z-index: 1;
+}
+
+.top ul{
+    list-style:none;
+    text-decoration: none;
+}
+.top a{
+    list-style:none;
+    text-decoration: none;
+}
+
+.top h1{
+    color: white;
+}              
+
+.navigation1 {
+    text-align: center;
+}
+
+.navigation1 li{
+    display:inline-block;
+    padding: 0 30px;
+}
+
+.top ul a{
+    color: black;
+}
+
+
+.top ul :hover{
+    color: rgb(255, 60, 1);
+}
+p {
+
+    margin-top: 5%;
+    color: white;
+}

@@ -1,0 +1,143 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {font-family: Arial, Helvetica, sans-serif;
+    background-image: url('meat_background.jpg');
+    text-align: center;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    }
+
+.top ul :hover{
+    color: rgb(241, 89, 50);
+}
+
+.top ul{
+    list-style:none;
+    text-decoration: none;
+    margin-top: -40px;
+    margin-right: 53%;
+}
+
+.top a{
+    list-style:none;
+    text-decoration: none;
+    color: white;
+    font-size: larger;
+    margin: 10px;
+} 
+
+.top{
+    background: linear-gradient(60deg, rgb(54, 25, 25), rgb(151, 8, 8), rgb(253, 51, 0));
+    width: 100%;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.top h1{
+    color: white;
+    width: 3%;
+    position: relative;
+    top: -3px;
+    left: 10%;
+    cursor: pointer;
+    font-size: 2.8em;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url('meat_background.jpg');
+}
+* {
+    box-sizing: border-box;
+}
+  
+p, h1{
+    text-align: center;
+    color: white;
+}
+  
+h1 {
+    font-family: FF Mark W05;
+}
+  
+input[type=text], input[type=password], input[type=email] {
+    width: 60%;
+    padding: 10px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f7eeee;
+    border-radius: 10px;
+}
+  
+input[type=text]:focus, input[type=password]:focus, input[type=email]:focus {
+    background-color: #eca5a5;
+}
+  
+hr {
+    border: 1px solid #020202;
+    margin-bottom: 40px;
+    margin-left: 79px;
+    width: 70%;
+}
+
+.container {
+    padding: 5px;
+    background-color: rgb(25, 25, 25);
+    margin: 3% auto 2% auto; 
+    border: 1px solid rgb(0, 0, 0);
+    width: 30%;
+    border-radius: 15px;
+}
+  
+
+/* Button */
+
+.btn {
+    padding: 1.1em 2em;
+    background: none;
+    border: 2px solid #fff;
+    font-size: 15px;
+    color: #ffffff;
+    cursor: pointer;
+    position: relative;
+    margin-bottom: 5%;
+    overflow: hidden;
+    transition: all 0.3s;
+    border-radius: 12px;
+    background-color: #302e2efa;
+    font-weight: bolder;
+    box-shadow: 0 2px 0 2px rgb(92, 88, 88);
+}
+  
+.btn:before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 120%;
+    background-color: #5425d6;
+    top: 50%;
+    transform: skewX(30deg) translate(-150%, -50%);
+    transition: all 0.5s;
+}
+  
+.btn:hover {
+    background-color: #dd2a2a;
+    color: rgb(255, 255, 255);
+    box-shadow: 0 2px 0 2px #9f25af;
+}
+  
+.btn:hover::before {
+    transform: skewX(30deg) translate(150%, -50%);
+    transition-delay: 0.1s;
+}
+  
+.btn:active {
+    transform: scale(0.9);
+}

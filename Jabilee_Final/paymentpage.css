@@ -1,0 +1,205 @@
+h2{
+  color: black;
+}
+
+body {
+  font-family: Verdana;
+  font-size: 17px;
+  padding: 65px;
+  background: #ffffff;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -msflex-wrap: wrap; /* IE10 */
+  width: 100%;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  -msflex: 250%; /* IE10 */
+  width: 225%;
+  margin-left: 70px;
+}
+
+.col-50 { /* IE10 */
+  width: 80%;
+  margin-left: 50px;
+}
+
+.col-75 {
+  -msflex: 75%; /* IE10 */
+  width: 65%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container {
+  background: #D3D3D3;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+input[type=text] {
+  width: 75%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+select{
+  border: 1px solid rgb(197, 197, 197);
+  padding: 12px;
+  border-radius: 10px;
+  width: 75%;
+  font-size: 15px;
+  text-align: left;
+
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 40px;
+}
+
+.button {
+  background-color: #141414;
+  color: #F1EAE8;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  width: 25%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.button:hover {
+  background-color: rgb(229,47,47);
+}
+
+.btn{
+    padding: 1.1em 3em;
+    background: none;
+    border: 2px solid #fff;
+    font-size: 15px;
+    color: #ffffff;
+    cursor: pointer;
+    position: relative;
+    margin-bottom: 2%;
+    overflow: hidden;
+    transition: all 0.3s;
+    border-radius: 12px;
+    background-color: #302e2efa;
+    font-weight: bolder;
+    box-shadow: 0 2px 0 2px rgb(92, 88, 88);
+}
+
+.btn:before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 120%;
+    background-color: #5425d6;
+    top: 50%;
+    transform: skewX(30deg) translate(-150%, -50%);
+    transition: all 0.5s;
+}
+
+.btn:hover{
+    background-color: #dd2a2a;
+    color: rgb(255, 255, 255);
+    box-shadow: 0 2px 0 2px #9f25af;
+}
+
+.btn:hover::before {
+    transform: skewX(30deg) translate(150%, -50%);
+    transition-delay: 0.1s;
+}
+
+.btn:active {
+    transform: scale(0.9);
+}
+
+a {
+  color: #f3d021;
+}
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
+
+.top{
+    position: fixed;
+    background: linear-gradient(60deg, rgb(54, 25, 25), rgb(151, 8, 8), rgb(253, 51, 0));
+    width: 101%;
+    height: 10%;
+    margin-top: -3.9%;
+    margin-left: -3.85%;
+    padding: 1px;
+    z-index: 1;
+}
+
+
+.top ul{
+    list-style:none;
+    text-decoration: none;
+    margin-top: -60px;
+    margin-right: 65%;
+}
+
+.top a{
+    list-style:none;
+    text-decoration: none;
+    color: white;
+    font-size: larger;
+    margin: 20px;
+}
+
+.top title{
+    font-size: 40px;
+    margin-top: 15px;
+    margin-left: 3%;
+  }
+
+.navigation1 {
+    text-align: center;
+    margin-top: -90px;  
+}
+
+.navigation1 li{
+    display:inline-block;
+    padding: 0 30px;
+}
+
+.top ul :hover{
+    color: rgb(241, 89, 50);
+}
